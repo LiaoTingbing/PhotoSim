@@ -15,15 +15,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://liaotingbing.github.io/photonics-website/',
+  url: 'https://liaotingbing.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/photonics-website/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'LiaoTingbing', // Usually your GitHub org/user name.
-  projectName: '', // Usually your repo name.
+  organizationName: 'liaotingbing', // Usually your GitHub org/user name.
+  projectName: 'photonics-website', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
