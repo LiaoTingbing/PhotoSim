@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkphoto_sim_lab=globalThis.webpackChunkphoto_sim_lab||[]).push([[7846],{2099:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"FDE ","slug":"/category/fde--1","permalink":"/PhotoSimLab/docs/category/fde--1","sidebar":"simSidebar","navigation":{"next":{"title":"\u4ecb\u7ecd","permalink":"/PhotoSimLab/docs/M_file/FDE/intro"}}}}')}}]);

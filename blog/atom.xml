@@ -105,4 +105,12 @@
         <category label="Hola" term="Hola"/>
         <category label="Docusaurus" term="Docusaurus"/>
     </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello]]></title>
+        <id>https://liaotingbing.github.io/PhotoSimLab/blog/2011/01/09/Hello</id>
+        <link href="https://liaotingbing.github.io/PhotoSimLab/blog/2011/01/09/Hello"/>
+        <updated>2011-01-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[nihao]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="nihao">nihao<a href="https://liaotingbing.github.io/PhotoSimLab/blog/2011/01/09/Hello#nihao" class="hash-link" aria-label="Direct link to nihao" title="Direct link to nihao" translate="no">​</a></h3>]]></content>
+    </entry>
 </feed>
