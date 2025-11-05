@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'PhotoSimLab',
+  title: 'PhotoSim',
   // tagline: 'Dinosaurs are cool',
   // favicon: 'img/favicon.ico',
 
@@ -24,12 +24,12 @@ const config = {
   url: 'https://liaotingbing.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/PhotoSimLab/',
+  baseUrl: '/PhotoSim/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'LiaoTingbing', // Usually your GitHub org/user name.
-  projectName: 'PhotoSimLab', // Usually your repo name.
+  projectName: 'PhotoSim', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -86,7 +86,7 @@ const config = {
         respectPrefersColorScheme: false,
       },
       navbar: {
-        title: 'PhotoSimLab',
+        title: 'PhotoSim',
         // logo: {
         //   alt: 'My Site Logo',
         //   src: 'img/logo.svg',
