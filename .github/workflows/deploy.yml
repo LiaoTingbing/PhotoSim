@@ -42,8 +42,9 @@ jobs:
       - name: Deploy to GitHub Pages
         env:
           USE_SSH: true
+
         run: |
-          git config --global user.email "actions@github.com"
-          git config --global user.name "gh-actions"
+          git config --global user.email "liaobing662@gmail.com"
+          git config --global user.name "LiaoTingbing"
           yarn install --frozen-lockfile
           yarn deploy
