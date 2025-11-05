@@ -10,23 +10,27 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Photonics Web',
-  // tagline: 'Dinosaurs are cool',
+  title: 'My Site',
+  tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
+  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+  future: {
+    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+  },
+
   // Set the production url of your site here
-  url: 'https://liaotingbing.github.io',
+  url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/photonics-website/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'liaotingbing', // Usually your GitHub org/user name.
-  projectName: 'photonics-website', // Usually your repo name.
+  organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -75,65 +79,32 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        respectPrefersColorScheme: true,
+      },
       navbar: {
-        title: 'Photonics',
-        // logo: {
-        //   alt: 'My Site Logo',
-        //   src: 'img/logo.svg',
-        // },
+        title: 'My Site',
+        logo: {
+          alt: 'My Site Logo',
+          src: 'img/logo.svg',
+        },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Intro',
+            label: 'Tutorial',
           },
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            type: 'docSidebar',
-            sidebarId: 'fdeSidebar',
-            position: 'left',
-            label: 'FDE',
+            href: 'https://github.com/facebook/docusaurus',
+            label: 'GitHub',
+            position: 'right',
           },
-          {
-            type: 'docSidebar',
-            sidebarId: 'fdtdSidebar',
-            position: 'left',
-            label: 'FDTD',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'emeSidebar',
-            position: 'left',
-            label: 'EME',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'rcwaSidebar',
-            position: 'left',
-            label: 'RCWA',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'bpmSidebar',
-            position: 'left',
-            label: 'BPM',
-          },
-          // {to: '/blog', label: 'FDE', position: 'left'},
-          // {to: '/blog', label: 'FDTD', position: 'left'},
-          // {to: '/blog', label: 'EME', position: 'left'},
-          // {to: '/blog', label: 'RCWA', position: 'left'},
-          // {to: '/blog', label: 'BPM', position: 'left'},
-
-          // {to: '/blog', label: 'Blog', position: 'left'},
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
         ],
       },
       footer: {
-        style: 'light',
+        style: 'dark',
         links: [
           {
             title: 'Docs',
@@ -148,34 +119,26 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Lumerical',
-                href:'https://www.lumerical.com/',
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
-                label: 'Rsoft',
-                href:'https://www.synopsys.com/zh-cn/optical-solutions/rsoft-photonic-device-tools/rsoft-products.html',
-              }
-              // {
-              //   label: 'Stack Overflow',
-              //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              // },
-              // {
-              //   label: 'Discord',
-              //   href: 'https://discordapp.com/invite/docusaurus',
-              // },
-              // {
-              //   label: 'X',
-              //   href: 'https://x.com/docusaurus',
-              // },
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
+              },
+              {
+                label: 'X',
+                href: 'https://x.com/docusaurus',
+              },
             ],
           },
           {
             title: 'More',
             items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',
@@ -183,7 +146,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Photonics, Inc. Built with LiaoTingbing.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
