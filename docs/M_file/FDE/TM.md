@@ -13,11 +13,11 @@ sidebar_position: 2
 ### 参数
 
 ```matlab
-L = 8e-6;
+L = 10e-6;
 dx = 0.1e-6;
 w = 2e-6;
-index = 1.3;
-nmodes = 6;
+index = 1.2;
+nmodes = 12;
 lambda = 1.55e-6;
 ```
 
