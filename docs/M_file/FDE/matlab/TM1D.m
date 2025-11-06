@@ -1,11 +1,11 @@
 
 
 clear;
-L = 8e-6;
+L = 10e-6;
 dx = 0.1e-6;
 w = 2e-6;
-index = 1.3;
-nmodes = 6;
+index = 1.2;
+nmodes = 12;
 lambda = 1.55e-6;
 
 %% 
@@ -33,6 +33,7 @@ eps_x(s1:s2-1) = index^2;
 
 EPS_X = spdiags(eps_x,0,nx,nx);
 EPS_Z = spdiags(eps_z , 0 ,nx ,nx);
+MU_Y = speye(nx,nx);
 
 
 %% TM
@@ -42,7 +43,7 @@ LXHY(1,1)=0;
 LXEZ = spdiags([-I,I]/dx , [0 1] , nx,nx);
 LXEZ(end,:) = LXEZ(end-1,:);
 
-A = EPS_X*LXEZ*inv(EPS_Z)*LXHY + k0*k0*EPS_X;
+A = EPS_X*LXEZ*inv(EPS_Z)*LXHY + k0*k0*EPS_X*MU_Y;
 
 [hy,d]=eigs(A,nmodes,index^2 * k0^2);
 
@@ -50,12 +51,9 @@ neff =  sqrt(diag(d))/k0;
 
 %% 过滤
 
-if min(abs(neff-1))<1e-9
-idx = dsearchn(neff , 1);
+idx =  (abs(neff-1))<1e-9;
 hy(:,idx)=[];
 neff(idx)=[];
-end
-
 
 %% 其它场分量
 
