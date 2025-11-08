@@ -12,7 +12,7 @@ import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'PhotoSim',
+  title: 'PhotoSimLab',// 网站标题
   // tagline: 'Dinosaurs are cool',
   // favicon: 'img/favicon.ico',
 
@@ -90,7 +90,7 @@ const config = {
         respectPrefersColorScheme: false,
       },
       navbar: {
-        title: 'PhotoSim',
+        title: 'PhotoSimLab',
         // logo: {
         //   alt: 'My Site Logo',
         //   src: 'img/logo.svg',
@@ -106,9 +106,9 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'simSidebar',
             position: 'left',
-            label: 'Sim',
+            label: 'SimLab',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Author', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',
