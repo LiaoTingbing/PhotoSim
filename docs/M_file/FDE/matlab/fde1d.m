@@ -113,10 +113,11 @@ Q = [Qxx, Qxy; Qyx, Qyy];
 neff_ = sqrt(diag(d)) / k0;
 %% 删除特征值
 
-flag = ones(size(neff_));
-for i = 2:length(neff_) - 1
-    if neff_(i) - neff_(i+1) < toler || neff_(i-1) - neff_(i) < toler
+flag = ones(nmodes_max,1);
+for i = 1:nmodes_max-1
+    if neff_(i) - neff_(i+1) <toler
         flag(i) = 0;
+        flag(i+1) = 0;
     end
 end
 neff = neff_(flag > 0);
