@@ -1,0 +1,43 @@
+clc;
+clear;
+
+nmodes = 6;
+ncells = 3;
+nports = 2;
+
+#Cell
+for(i=1:ncells){
+    s = "EME::Cells::cell_"+num2str(i);
+    mode = getresult(s , "mode fields");
+    
+    fp =  "cell_"+num2str(i)+"_mode.mat";
+    matlabsave(fp , mode);
+    
+    neff =getresult(s,"neff");
+    
+    
+    fp =  "cell_"+num2str(i)+"_neff.mat";
+    matlabsave(fp , neff);
+}
+ 
+ 
+ #port
+for(i=1:nports){
+    s = "EME::Ports::port_"+num2str(i);
+    mode = getresult(s , "mode profiles");
+    
+    fp =  "port_"+num2str(i)+"_mode.mat";
+    matlabsave(fp , mode);
+    
+    neff =getresult(s,"neff");
+    
+    
+    fp =  "port_"+num2str(i)+"_neff.mat";
+    matlabsave(fp , neff);
+}
+ 
+
+
+
+
+
